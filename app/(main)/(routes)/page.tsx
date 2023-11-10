@@ -1,12 +1,8 @@
-
-import {cn} from "@/lib/utils";
-const state = true;
+import { UserButton} from "@clerk/nextjs";
 export default function Home() {
   return (
       <div>
-      <p className="text-3xl font-bold text-indigo-500">This is a protected route, I only want logged in users here.</p>
-
-
+          <UserButton afterSignOutUrl={"/"}/>
       </div>
 
 
